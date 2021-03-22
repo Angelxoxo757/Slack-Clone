@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
@@ -6,7 +8,15 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Slack Clone</h1>
+      <Router>
+        <>
+          <Switch>
+            <Route path="/">
+              <h1>Homepage</h1>
+            </Route>
+          </Switch>
+        </>
+      </Router>
     </div>
   );
 }
