@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./Header";
 import "./App.css";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <Router>
         <>
           <Switch>
-            <Route path="/">
-              <h1>Homepage</h1>
+            <Route path="/" exact>
+              <Header />
             </Route>
           </Switch>
         </>
